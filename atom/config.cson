@@ -1,0 +1,15 @@
+"*":
+  core:
+    disabledPackages: [
+      "wrap-guide"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    autoIndentOnPaste: false
+    lineHeight: 1.7
+    scrollPastEnd: true
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "2c922090-6a23-35ff-0ac5-8d8116641de6"
+  welcome:
+    showOnStartup: false

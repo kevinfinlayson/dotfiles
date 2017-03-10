@@ -1,0 +1,67 @@
+[core]
+  quotepath = false
+  excludesfile = ~/.gitignore
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	autocrlf = false
+	editor = atom --wait
+
+[color]
+  ui = true
+
+[push]
+  default = current
+
+[pull]
+  default = current
+  rebase = true
+
+[diff]
+  tool = Kaleidoscope
+
+[difftool]
+  prompt = false
+
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[merge]
+  tool = Kaleidoscope
+
+[mergetool]
+  prompt = false
+
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
+
+[branch]
+  autosetupmerge = true
+
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  c = commit -a -v
+  d = diff
+  p = push
+  pu = push -u
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  l = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  pr = pull-request
+
+[hub]
+  protocol = https
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+
+[user]
+  name = Kevin Finlayson
+  email = kevin@kevinfinlayson.com
