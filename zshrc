@@ -98,13 +98,6 @@ unsetopt correct_all
 # CLI Horizontal scroll mode
 set horizontal-scroll-mode on
 
-# Load rbenv
-if [ -d ~/.rbenv ]
-then
-  PATH=~/.rbenv/bin:$PATH
-  eval "$(rbenv init -)"
-fi
-
 # Load nvm
 if [ -s ~/.nvm/nvm.sh ]
 then
@@ -140,4 +133,4 @@ eval "$(rbenv init -)"
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
