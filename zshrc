@@ -128,8 +128,6 @@ setopt no_complete_aliases
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
