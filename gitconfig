@@ -17,6 +17,7 @@
 
 [diff]
   tool = Kaleidoscope
+	algorithm = patience
 
 [difftool]
   prompt = false
@@ -54,14 +55,22 @@
   protocol = https
 
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 
 [user]
-  name = Kevin Finlayson
-  email = kevin@kevinfinlayson.com
+	name = Kevin Finlayson
+	email = kevin@kevinfinlayson.com
+[protocol]
+	version = 2
+[credential]
+	helper = osxkeychain
+[url "https://github.com/Shopify/"]
+	insteadOf = git@github.com:Shopify/
+	insteadOf = git@github.com:shopify/

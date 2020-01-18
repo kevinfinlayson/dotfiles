@@ -31,7 +31,7 @@ then
   alias cp='cp -i'
   alias rm='rm -i'
   alias mv='mv -i -v'
-  alias ls='ls -lsa'
+  alias ls='ls -lspa'
 
 
   # Add Homebrew to PATH
@@ -132,3 +132,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+### MySQL support
+export PATH="/usr/local/mysql/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
