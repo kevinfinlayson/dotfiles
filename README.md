@@ -6,7 +6,7 @@ Based off of [Kevin Clark's dotfiles](https://github.com/vernalkick/dotfiles) wh
 
 ```shell
 $ cd ~/
-$ git clone git@github.com:vernalkick/dotfiles.git
+$ git clone git@github.com:kevinfinlayson/dotfiles.git
 $ cd ~/dotfiles
 $ ./bootstrap.sh
 ```
