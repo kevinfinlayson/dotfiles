@@ -52,12 +52,10 @@ brew install hub
 header "Installing apps"
 
 # Essentials
-brew cask install dropbox
 brew cask install one-password
-brew cask install slack
 brew cask install things
-brew cask install atom
-brew cask install sketch
+brew cask install Kaleidoscope
+brew cask install Github
 
 # Quicklook extensions (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlcolorcode qlstephen quicklook-json
