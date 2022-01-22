@@ -32,9 +32,6 @@ ensure_repo ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting git@github.com:z
 # Set ZSH as the default shell
 chsh -s /bin/zsh
 
-# Vim
-ensure_repo ~/.vim/bundle/vundle git@github.com:gmarik/vundle.git
-
 # Ruby
 ensure_repo ~/.rbenv git@github.com:sstephenson/rbenv.git
 ensure_repo ~/.rbenv/plugins/ruby-build git@github.com:sstephenson/ruby-build.git
