@@ -83,3 +83,4 @@ code --install-extension dbaeumer.vscode-eslint # ESLint Javascript
 code --install-extension shd101wyy.markdown-preview-enhanced # Better Markdown previews
 code --install-extension quicktype.quicktype #Paste JSON as code
 code --install-extension esbenp.prettier-vscode #Format code with prettier
+code --install-extension akarlsten.vscode-snazzy-akarlsten #Install snazzy plus theme
