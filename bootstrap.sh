@@ -11,7 +11,6 @@
 header "Setting up config files"
 
 # Config files
-ensure_symlink ~/dotfiles/vimrc ~/.vimrc
 ensure_symlink ~/dotfiles/zshrc ~/.zshrc
 ensure_symlink ~/dotfiles/gitconfig ~/.gitconfig
 ensure_symlink ~/dotfiles/gitignore ~/.gitignore
