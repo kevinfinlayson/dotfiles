@@ -105,7 +105,7 @@ then
 fi
 
 # Set editor
-export EDITOR='atom -w'
+export EDITOR="vscode"
 
 function dev {
   (
