@@ -14,7 +14,7 @@ source ~ZSH_CUSTOM/plugins/pure/async.zsh
 source ~ZSH_CUSTOM/plugins/pure/pure.zsh
 PURE_GIT_PULL=0
 
-export NVM_DIR=~/.nvm
+# export NVM_DIR=~/.nvm
 # source $(brew --prefix nvm)/nvm.sh
 
 # For local customizations
