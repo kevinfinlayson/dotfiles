@@ -33,12 +33,12 @@ ensure_repo ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting git@github.com:z
 chsh -s /bin/zsh
 
 # Ruby
-ensure_repo ~/.rbenv git@github.com:sstephenson/rbenv.git
-ensure_repo ~/.rbenv/plugins/ruby-build git@github.com:sstephenson/ruby-build.git
-sudo gem install bundler
+# ensure_repo ~/.rbenv git@github.com:sstephenson/rbenv.git
+# ensure_repo ~/.rbenv/plugins/ruby-build git@github.com:sstephenson/ruby-build.git
+# sudo gem install bundler
 
 # Node
-ensure_repo ~/.nvm git@github.com:creationix/nvm.git
+# ensure_repo ~/.nvm git@github.com:creationix/nvm.git
 
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
