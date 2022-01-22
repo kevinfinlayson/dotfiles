@@ -107,15 +107,6 @@ fi
 # Set editor
 export EDITOR="vscode"
 
-function dev {
-  (
-    set -e
-    cd ~/vagrant
-    if vagrant status | grep -q 'powered off'; then vagrant up; fi
-    vagrant ssh -- -t 'cd ~/src/shopify && exec $SHELL --login'
-  )
-}
-
 function forcepush {
   (
     branch=$(git symbolic-ref --short HEAD)
