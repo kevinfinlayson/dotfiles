@@ -72,12 +72,14 @@ defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.
 
 
 # ==============================================================================
-# SET UP ATOM
+# SET UP VSCODE
 # ==============================================================================
 
 # Symlink config files
-ln -s -f ~/dotfiles/atom/config.cson ~/.atom/config.cson
+ln -s -f ~/dotfiles/vscode/argv.json ~/.vscode/argv.json
 
 # Install packages
-apm install pigments # Visually see colors represented by HEX codes
-apm install emmet # HTML & CSS autocompletion
+code --install-extension dbaeumer.vscode-eslint # ESLint Javascript
+code --install-extension shd101wyy.markdown-preview-enhanced # Better Markdown previews
+code --install-extension quicktype.quicktype #Paste JSON as code
+code --install-extension esbenp.prettier-vscode #Format code with prettier
