@@ -40,12 +40,12 @@ then
     PATH="/usr/local/bin:$PATH"
   fi
 
-#   # Add Postgres.app to PATH
-#   if [ -d /Applications/Postgres.app ]
-#   then
-#     PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-#   fi
-# fi
+  # Add Postgres.app to PATH
+  #   if [ -d /Applications/Postgres.app ]
+  #   then
+  #     PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+  #   fi
+fi
 
 # Git commands
 alias g="hub"
