@@ -83,8 +83,8 @@ alias serve='ruby -run -e httpd . -p 9090'
 function be { bundle check >/dev/null || bundle install && bundle exec $@; }
 alias bi='bundle install'
 alias ss='be TDD=0 script/server'
-alias mysql='/usr/local/mysql/bin/mysql'
-alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
+# alias mysql='/usr/local/mysql/bin/mysql'
+# alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
 
 #History
 alias h='history'
@@ -118,4 +118,4 @@ function forcepush {
 setopt no_complete_aliases
 
 ### MySQL support
-export PATH="/usr/local/mysql/bin:$PATH"
+# export PATH="/usr/local/bin/mysql:$PATH"
