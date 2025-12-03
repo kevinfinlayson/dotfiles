@@ -6,13 +6,11 @@ if [ -f /etc/environment ]; then source /etc/environment; fi
 
 # Oh-my-zsh
 ZSH=$HOME/.oh-my-zsh
-plugins=(zsh-syntax-highlighting)
+plugins=()
 source $ZSH/oh-my-zsh.sh
 
-# Pure theme
-source ~ZSH_CUSTOM/plugins/pure/async.zsh
-source ~ZSH_CUSTOM/plugins/pure/pure.zsh
-PURE_GIT_PULL=0
+source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 
 # export NVM_DIR=~/.nvm
 # source $(brew --prefix nvm)/nvm.sh
@@ -119,3 +117,18 @@ setopt no_complete_aliases
 
 ### MySQL support
 # export PATH="/usr/local/bin/mysql:$PATH"
+export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/opt/homebrew/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+# asdf
+export ASDF_DATA_DIR=/Users/kevin/.asdf
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
+# append completions to fpath
+# fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
+
+# Pure prompt via homebrew
+fpath+=$(brew --prefix)/share/zsh/site-functions
+autoload -U promptinit; promptinit
+prompt pure

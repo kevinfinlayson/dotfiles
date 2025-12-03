@@ -25,8 +25,8 @@ header "Setting up packages"
 
 # Shell
 ensure_repo ~/.oh-my-zsh git@github.com:robbyrussell/oh-my-zsh.git
-ensure_repo ~/.oh-my-zsh/custom/plugins/pure git@github.com:sindresorhus/pure.git
-ensure_symlink ~/.oh-my-zsh/custom/plugins/pure/async.zsh /usr/local/share/zsh/site-functions/async
+#ensure_repo ~/.oh-my-zsh/custom/plugins/pure git@github.com:sindresorhus/pure.git
+#ensure_symlink ~/.oh-my-zsh/custom/plugins/pure/async.zsh /usr/local/share/zsh/site-functions/async
 ensure_repo ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting git@github.com:zsh-users/zsh-syntax-highlighting.git
 
 # Set ZSH as the default shell
@@ -41,8 +41,8 @@ chsh -s /bin/zsh
 # ensure_repo ~/.nvm git@github.com:creationix/nvm.git
 
 # Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install hub
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#brew install hub
 
 
 # ==============================================================================
@@ -52,13 +52,20 @@ brew install hub
 header "Installing apps"
 
 # Essentials
-brew install one-password
+# brew install one-password
 brew install things
-brew install Kaleidoscope
+brew install iterm
+# brew install Kaleidoscope
 brew install Github
+brew visual-studio-code
+
+header "installing fonts"
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-fonts
+brew install font-sf-mono
 
 # Quicklook extensions (https://github.com/sindresorhus/quick-look-plugins)
-brew install qlcolorcode qlstephen quicklook-json
+# brew install qlcolorcode qlstephen quicklook-json
 
 
 # ==============================================================================
@@ -68,7 +75,7 @@ brew install qlcolorcode qlstephen quicklook-json
 header "Tweaking OSX Preferences"
 
 # Fix doc hiding and showing (http://kevinclark.ca/articles/hide-your-dock-without-losing-your-mind)
-defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -float 0.5; killall Dock
+# defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -float 0.5; killall Dock
 
 
 # ==============================================================================
